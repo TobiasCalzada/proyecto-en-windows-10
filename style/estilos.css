@@ -1,0 +1,654 @@
+/*reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*grid*/
+
+body{
+    background-color: rgb(198, 197, 197);
+}
+/*grid area*/
+/*header*/
+
+
+header{
+    background-color:  rgb(104, 100, 100);
+    display: flex;
+    justify-content:space-between;
+}
+
+/*navegador*/
+
+.menu{
+    background-color:  rgb(175, 174, 174);
+}
+
+.menu ul li{
+   display: flex;
+   justify-content: flex-start;
+}
+
+/*imagenes*/
+
+.mainImagenes{
+    background-color: rgb(104, 100, 100);
+}
+
+/*iconos*/
+
+.iconos{
+    background-color:  rgb(154, 152, 152);
+}
+
+/*texto*/
+
+.textoCuerpo{
+    background-color: rgb(198, 197, 197);
+
+}
+
+/*datos*/
+
+.datos{
+    background-color:rgb(132, 128, 128);
+}
+
+/*footer*/
+
+.pieDePagina{
+    background-color:  rgb(153, 141, 141); 
+}
+
+/*stilos*/
+
+/*titulo-stilo*/
+header .tituloLogo{
+    background-color:  rgb(104, 100, 100);
+    display: flex;  
+    align-items: center;
+    padding:1rem;
+    height: 6rem;
+}
+
+.tituloLogo h1{
+    color: rgb(42, 40, 40);
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight:bolder;
+    text-shadow: 1px 2px black;
+    margin-left: 20px;
+}
+
+
+/*buscador-*/
+header .buscador{
+    background-color:  rgb(104, 100, 100);
+    display: flex;
+    align-items: center;
+
+}
+
+header .buscador input{
+    border: 1px solid rgb(44, 43, 43);
+    justify-content: center;
+    width:30rem;
+    height:2rem;
+    font-size:1rem;
+}
+
+/*icono-buscador*/
+
+header .buscador .iconoBuscador{
+    background-color:  rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0% 20% 20% 0%;
+    cursor: pointer;
+    width:2rem;
+    height:2rem;
+ }
+ 
+/*stilo-acceder*/
+.contenedorAccederCarrito{
+    display: flex;
+    padding-right: 1rem
+}
+
+header .acceder{
+    display: flex;
+    align-items: center;
+
+}
+header .acceder div{
+    font-weight: bold;
+    font-family: 'Albert Sans', sans-serif;
+    font-size:1rem;
+}
+
+/*estilos-carrito*/
+
+header .carrito{
+    background-color:  rgb(104, 100, 100);
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+ 
+}
+
+
+header .carrito div{
+    font-weight: bold;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+/*menu-estilos*/
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu ul div li {
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  font-family:'Albert Sans', sans-serif ;
+  font-weight: bold;
+  color: black;
+  margin: 0px 3px 0px 3px;
+}
+
+.menu div{
+    margin:5px 5px 5px 5px;
+    padding:6px;
+    transition: 2s;
+    border-radius:5%;
+
+}
+/*boton 1*/
+.menu div:hover{
+    background-color: rgb(197, 208, 202);
+    box-shadow: 0 0 10px  rgb(67, 66, 66), 0 0 20px rgb(98, 97, 97), 0 0 40px rgb(103, 100, 100);
+ }
+
+ .menu div a li:hover{
+    color: rgb(255, 250, 230);
+ }
+
+.menu ul a{
+    text-decoration: none; 
+}
+
+/*fotos-main*/
+.contenedorMainImagenes{
+  background-color: rgb(127, 127, 127);
+  display: flex;
+  padding: 20px 0px 20px 0px;
+
+}
+
+.mainImagenes{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    border-radius:3%;
+    border: 2px  rgba(91, 89, 89, 0.668) solid;
+}
+
+.mainImagenes ul{
+    background-color: black;
+    border: 1px solid rgb(220, 213, 213);
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: cambio 10s infinite alternate;   
+}
+
+.mainImagenes li{
+    width: 100%;
+    list-style: none;
+}
+
+.mainImagenes img {
+    width: 100%;
+    height: 50rem;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+
+}
+
+/*iconos-estilo*/
+
+.iconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    height: 7rem;
+}
+
+.iconos p{
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: rgba(117, 112, 112, 0.327);
+    padding: 20px;
+    border-radius: 1%;
+    animation-name: iconos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes iconos {
+  0% {}
+  50% { box-shadow: 0 0 30px  rgb(243, 237, 237), 0 0 10px rgb(98, 97, 97), 0 0 90px rgb(103, 100, 100);}
+  100% {}
+}
+
+.icono1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-family:'Albert Sans', sans-serif ;
+   font-weight: bold;
+
+}
+
+.icono2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Albert Sans', sans-serif ;
+    font-weight: bold;
+   
+ }
+
+ .icono3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    font-family:'Albert Sans', sans-serif ;
+    font-weight: bold;
+ }
+
+ .icono4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Albert Sans', sans-serif ;
+    font-weight: bold;
+
+ }
+
+ /*estilos-texto*/
+
+ .textoCuerpo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    height: 10rem;
+    padding-top: 15px;
+   
+ }
+
+ .textoCuerpo .diseño{
+    font-family: 'Roboto', sans-serif;
+ }
+
+ .textoCuerpo .cuerpoP{
+    font-family:'Albert Sans', sans-serif ;
+    font-weight: bold;
+    font-size: 1rem;
+   margin: 6px 0px 6px 0px;
+}
+.textoCuerpo div{
+  padding-top: 1rem;
+ }
+
+.textoCuerpo div a{
+    background-color:rgb(139, 134, 134);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-radius:7%;
+    border: 0.2rem solid rgb(61, 60, 60);
+    color: rgb(93, 91, 91); 
+    font-size: 1rem;
+    padding: 5px;
+    transition: 1s;
+ }
+
+ .textoCuerpo div a:hover{
+    color: bisque;
+    background-color: rgb(142, 148, 145);
+    box-shadow: 0 0 10px  rgb(69, 61, 61), 0 0 20px rgb(105, 95, 95), 0 0 40px rgb(112, 97, 97);
+ }
+ 
+ /*datos-estilos*/
+ .contenedorDeDatos{
+    padding-top:1rem;
+    padding-bottom:1rem;
+ }
+
+ .datos .contenedorDeDatos{
+    background-color: rgb(153, 141, 141);
+    display:flex;
+    justify-content: space-evenly;
+
+ }
+
+ .datos .contenedorDeDatos .diseñoExclusivo .p1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    color: rgb(104, 100, 100);
+  
+ }
+
+ .datos .contenedorDeDatos .categorias .p3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: rgb(104, 100, 100);
+
+ }
+
+ .datos .contenedorDeDatos .contactanos .p4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(104, 100, 100);
+ }
+
+ /*datos-estilos*/
+
+ .datos .contenedorDeDatos .diseñoExclusivo .p2{
+    font-weight: bold;
+    font-family:'Albert Sans', sans-serif;
+ }
+
+ .datos .contenedorDeDatos .categorias a{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-family:'Albert Sans', sans-serif ;
+    text-decoration: none;
+    color: black;
+ }
+
+ 
+ .datos .contenedorDeDatos .contactanos p{
+    font-weight: bold;
+    font-family:'Albert Sans', sans-serif ;
+
+ }
+
+ /*pie de pagina*/
+
+ .pieDePagina{
+    display: flex;
+    align-items: center;
+ }
+
+ .textoMetodos{
+    margin: 2rem;
+    font-size: 1.2rem;
+ }
+ 
+ .pieDePagina .tarjeta1 img{
+    height: 2rem;
+    margin-right:1.5rem ;
+}
+
+.pieDePagina .tarjeta2 img {
+    height: 2rem;
+    margin-right:1rem ;
+}
+ 
+.pieDePagina .tarjeta3 img{
+    height: 2rem;
+    margin-right:1rem ;
+}
+ 
+.pieDePagina .tarjeta4 img{
+    height: 2rem;
+    margin-right:1rem ;
+}
+
+.pieDePagina p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+}
+
+.pieDePagina .tarjetaContenedor{
+    display: flex;
+}
+/*copi*/
+
+.copy{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color:  rgb(153, 141, 141);
+    color: rgb(57, 56, 56);
+    font-size: 10px;
+}
+
+
+/*pagina NUEVO HTML*/
+
+.mainPagina{
+    display:flex;
+    flex-direction: column;
+}
+
+.contenedorSeccionPagina{
+    display: flex;
+    flex-direction: column;
+}
+
+.h1Pagina{
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.sectionPagina{
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 40px 20px 20px;
+}
+
+.sectionPagina2{
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 40px 20px 20px;
+}
+
+.contenedorDeImagenesPagina{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.mainPagina img{
+    width: 22%;
+    border-radius: 10%;
+    border:0.5rem solid gray;
+}
+
+/*PAGINA NUEVa productos*/
+
+.galleriContenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem 2rem 15rem; 
+}
+/*conjunto 1*/
+
+.conjunto1 img{
+  width: 25%;
+    
+}
+
+.conjunto1 p{
+    width: 25%;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+/*conjunto 2*/
+
+.conjunto2 img{
+    width: 25%;
+}
+
+.conjunto2 p{
+    width: 25%;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+/*conjunto 3*/
+
+.conjunto3 img{
+    width: 25%;
+
+}
+
+.conjunto3 p{
+    width: 25%;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*nosotros NUEVO HTML*/
+
+.mainNosotros{
+    margin: 3rem;
+    padding-left: 2rem;
+}
+
+.mainNosotros h1{
+    font-size: 1.7rem;
+}
+
+main .nuestroEmprendimiento {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedordeP{
+   text-align: center;
+   margin-top:4rem;
+   font-size:1.2rem;
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(59, 59, 59);
+}
+
+.contenedorNosotros{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 3rem;
+    margin-top: 10rem;
+}
+
+.mision .pMision {
+    font-size: 2.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+.mision .pMision i{
+    padding-right: 2rem ;
+}
+
+.vision .pVision{
+    font-size: 2.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold
+}
+
+.vision .pVision i{
+    padding-right: 2rem 
+    
+}
+
+
+.valores .pValores {
+    font-size: 2.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.valores .pValores i {
+    padding-right: 2rem 
+}
+
+/*bootstrap contactos*/
+.bodybootstrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerBootstrap  li{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.tituloBootstap{
+    font-family:'Albert Sans', sans-serif;
+    height:2rem;
+}
+
+.navegadorBootstrap{
+    background-color: rgb(245, 219, 185);
+    width: 100%;
+}
+
+.classDeImagenesB .imgB{
+    width: 100%;
+    padding-top: 20px;
+    padding-left:2rem;
+}
+
+
+/*boostrap*/
+
+
+
+
+
+
