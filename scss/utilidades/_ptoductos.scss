@@ -1,0 +1,48 @@
+// PRODUCTOS
+
+/*PRODUCTOS*/
+.galleriContenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem 2rem 15rem;
+    /*conjunto 1*/
+    .conjunto1{
+        img{
+            width: 25%;
+          }
+          p{
+            width: 25%;
+            margin-top: 9px;
+            margin-bottom: 9px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    /*conjunto 2*/
+    .conjunto2{
+        img{
+            width: 25%;
+          }
+          p{
+            width: 25%;
+            margin-top: 9px;
+            margin-bottom: 9px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    /*conjunto 3*/
+    .conjunto3{
+        img{
+            width: 25%;
+          }
+          p{
+            width: 25%;
+            margin-top: 9px;
+            margin-bottom: 9px;
+            display: flex;
+            justify-content: center;
+        }
+    }   
+}

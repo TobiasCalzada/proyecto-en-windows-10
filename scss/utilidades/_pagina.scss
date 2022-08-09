@@ -1,0 +1,42 @@
+// PAGINA
+
+/*PAGINA*/
+.mainPagina{
+    display:flex;
+    flex-direction: column;
+    .h1Pagina{
+        font-size: 1.6rem;
+        text-align: center;
+        padding-top: 5rem;
+    }    
+    .contenedorSeccionPagina{
+        display: flex;
+        flex-direction: column;
+        .sectionPagina{
+            font-size: 0.9rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px 40px 20px 20px;
+        }
+    }
+    .sectionPagina2{
+        font-size: 0.9rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 40px 20px 20px;
+    }
+    .contenedorDeImagenesPagina{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        img{
+            width: 22%;
+            border-radius: 10%;
+            border:0.5rem solid gray;
+        }
+    }
+    
+}

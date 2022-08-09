@@ -1,0 +1,47 @@
+//INICIO DE PAGINA
+
+/*INICIO*/
+.contenedorMainImagenes{
+    background-color: rgb(127, 127, 127);
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    .mainImagenes{
+        width: 60%;
+        margin: auto;
+        overflow: hidden;
+        border-radius:3%;
+        border: 2px  rgba(91, 89, 89, 0.668) solid;
+        ul{
+            background-color: black;
+            border: 1px solid rgb(220, 213, 213);
+            display: flex;
+            padding: 0%;
+            width: 400%;
+            animation: cambio 10s infinite alternate;
+            li{
+                width: 100%;
+                list-style: none;
+                img {
+                    width: 100%;
+                    height: 50rem;
+                }
+            }   
+        }
+    }
+  
+  }
+  /*animacion INICIO*/
+  @keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+
+}

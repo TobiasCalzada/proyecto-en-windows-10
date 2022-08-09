@@ -1,0 +1,58 @@
+// NOSOTROS 
+
+/*NOSOTROS*/
+
+.mainNosotros{
+    margin: 3rem;
+    padding-left: 2rem;
+    .nuestroEmprendimiento {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.7rem;
+    }
+    .contenedordeP{
+        text-align: center;
+        margin-top:4rem;
+        font-size:1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(59, 59, 59);
+     }
+     .contenedorNosotros{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 3rem;
+        margin-top: 10rem;
+        .contenedorNosotros{
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            grid-gap: 3rem;
+            margin-top: 10rem;
+        }
+        .mision .pMision {
+            font-size: 2.3rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        
+        }
+        .mision .pMision i{
+            padding-right: 2rem ;
+        }
+        .vision .pVision{
+            font-size: 2.3rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold
+        }
+        .vision .pVision i{
+            padding-right: 2rem;
+            
+        }
+        .valores .pValores {
+            font-size: 2.3rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+        .valores .pValores i {
+            padding-right: 2rem 
+        }        
+    }
+}

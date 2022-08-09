@@ -1,0 +1,353 @@
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+// imports
+@import "utilidades/inicio";
+@import "utilidades/pagina";
+@import "utilidades/ptoductos";
+@import "utilidades/nosotros";
+@import "utilidades/queris";
+
+//VARIABLES
+$font: font-family 'Oswald', sans-serif;
+
+body{
+    background-color: rgb(198, 197, 197);
+    header{
+        background-color:  rgb(104, 100, 100);
+        display: flex;
+        justify-content:space-between;
+        .tituloLogo{
+            background-color:  rgb(104, 100, 100);
+            display: flex;  
+            align-items: center;
+            padding:1rem;
+            height: 6rem;
+            h1{
+                color: rgb(42, 40, 40);
+                font-size: 2rem;
+                font-family: 'Oswald', sans-serif;
+                font-weight:bolder;
+                text-shadow: 1px 2px black;
+                margin-left: 20px;
+            }            
+        }
+        .buscador{
+            background-color:  rgb(104, 100, 100);
+            display: flex;
+            align-items: center;
+            input{
+                border: 1px solid rgb(44, 43, 43);
+                justify-content: center;
+                width:30rem;
+                height:2rem;
+                font-size:1rem;
+            }
+            .iconoBuscador{
+                background-color:  rgb(44, 43, 43);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0% 20% 20% 0%;
+                cursor: pointer;
+                width:2rem;
+                height:2rem;
+            }
+        }
+        .contenedorAccederCarrito{
+            display: flex;
+            padding-right: 1rem;
+            .acceder{
+                display: flex;
+                align-items: center;
+                div{
+                    font-weight: bold;
+                    font-family: 'Albert Sans', sans-serif;
+                    font-size:1rem;
+                }
+            }
+            .carrito{
+                background-color:  rgb(104, 100, 100);
+                display: flex;
+                align-items: center;
+                margin-left: 1rem;
+                div{
+                    font-weight: bold;
+                    font-family: 'Albert Sans', sans-serif;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    /*menu*/
+    .menu{
+        background-color:  rgb(175, 174, 174);
+            ul{
+                display: flex;
+                justify-content: center;
+                div{
+                    margin:5px 5px 5px 5px;
+                    padding:6px;
+                    transition: 2s;
+                    border-radius:5%;
+                    a{
+                        text-decoration: none;
+                    }
+                    li {
+                        display: flex;
+                        justify-content: flex-start;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        display: flex;
+                        font-family:'Albert Sans', sans-serif ;
+                        font-weight: bold;
+                        color: black;
+                        margin: 0px 3px 0px 3px;
+                    }
+                }
+            } 
+    }
+    /*hover menu*/
+    .menu div:hover{
+        background-color: rgb(197, 208, 202);
+        box-shadow: 0 0 10px  rgb(67, 66, 66), 0 0 20px rgb(98, 97, 97), 0 0 40px rgb(103, 100, 100);
+     }
+
+    .menu div a li:hover{
+        color: rgb(255, 250, 230);
+     }
+
+     /*iconos*/
+
+    .iconos{
+        background-color:  rgb(154, 152, 152);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        height:7rem;
+        p{
+            text-align: center;
+            font-size: 1.2rem;
+            background-color: rgba(117, 112, 112, 0.327);
+            padding: 20px;
+            border-radius: 1%;
+            animation-name: iconos;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            max-width: 15rem;
+            max-height: 5rem; 
+        }
+        .icono1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family:$font ;
+            font-weight: bold;
+         
+        }
+        
+        .icono2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family:$font;
+            font-weight: bold;
+        
+        }
+
+        .icono3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   
+            font-family:$font ;
+            font-weight: bold;
+        }
+
+        .icono4{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family:$font;
+            font-weight: bold;
+
+        }
+
+        @keyframes iconos {
+            0% {}
+            50% { box-shadow: 0 0 30px  rgb(243, 237, 237), 0 0 10px rgb(98, 97, 97), 0 0 90px rgb(103, 100, 100);}
+            100% {}
+        }
+    }
+    /*texto*/
+
+    .textoCuerpo{
+        background-color: rgb(198, 197, 197);
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        height: 10rem;
+        padding-top: 15px;
+        .diseño{
+            font-family: 'Roboto', sans-serif;
+        }
+        .cuerpoP{
+            font-family:'Albert Sans', sans-serif ;
+            font-weight: bold;
+            font-size: 1rem;
+           margin: 6px 0px 6px 0px;
+        }
+        div{
+            padding-top: 1rem;
+            a{
+                background-color:rgb(139, 134, 134);
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                border-radius:7%;
+                border: 0.2rem solid rgb(61, 60, 60);
+                color: rgb(93, 91, 91); 
+                font-size: 1rem;
+                padding: 5px;
+                transition: 1s;
+            }
+        }
+    }
+    .textoCuerpo div a:hover{
+        color: bisque;
+        background-color: rgb(142, 148, 145);
+        box-shadow: 0 0 10px  rgb(69, 61, 61), 0 0 20px rgb(105, 95, 95), 0 0 40px rgb(112, 97, 97);
+    }
+
+    /*datos*/
+
+    .datos{
+        background-color:rgb(132, 128, 128);
+        .contenedorDeDatos{
+            padding-top:1rem;
+            padding-bottom:1rem;
+            height: 12rem;
+            background-color: rgb(153, 141, 141);
+            display:flex;
+            justify-content: space-evenly;
+            .diseñoExclusivo{
+                max-width: 14rem;
+                max-height: 14rem;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .p1{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    padding-bottom: 2rem;
+                    color: rgb(104, 100, 100);
+                }
+                .p2{
+                    font-weight: bold;
+                    font-family:'Albert Sans', sans-serif;
+                }
+            }
+            .categorias{
+                max-width: 14rem;
+                max-height: 14rem;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .p3{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    padding-bottom: 1rem;
+                    color: rgb(104, 100, 100);
+                }
+                a{
+                    padding-bottom: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    font-weight: bold;
+                    font-family:'Albert Sans', sans-serif ;
+                    text-decoration: none;
+                    color: black;
+                }   
+            }
+            .contactanos{
+                max-width: 14rem;
+                max-height: 14rem;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                p{
+                    padding-bottom: 1rem;
+                    font-weight: bold;
+                    font-family:'Albert Sans', sans-serif;
+                }
+                .p4{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    color: rgb(104, 100, 100);
+                    padding-bottom: 1rem;
+                }
+            }  
+        }  
+    }
+
+    /*pie de pagina*/
+
+    .pieDePagina{
+        background-color:  rgb(153, 141, 141);
+        display: flex;
+        align-items: center;
+        .textoMetodos{
+            margin: 2rem;
+            font-size: 1.2rem;
+        }
+        p{
+            font-family: $font;
+            font-weight: bold;
+            color: rgb(48, 48, 48);
+        }
+        .tarjetaContenedor{
+            display: flex;
+            .tarjeta1{
+                img{
+                    height: 2rem;
+                    margin-right:1.5rem ;
+                }
+            }
+            .tarjeta2{
+                img{
+                    height: 2rem;
+                    margin-right:1rem ;
+                }
+            }
+            .tarjeta3{
+                img{
+                    height: 2rem;
+                    margin-right:1rem ;
+                }
+            }
+            .tarjeta4{
+                img{
+                    height: 2rem;
+                    margin-right:1rem ;
+                }
+            }
+
+        }
+
+    }
+
+    .copy{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color:  rgb(153, 141, 141);
+        color: rgb(57, 56, 56);
+        font-size: 10px;
+    }
+}
