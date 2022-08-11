@@ -10,6 +10,10 @@
 @import "utilidades/ptoductos";
 @import "utilidades/nosotros";
 @import "utilidades/queris";
+@import "utilidades/mixin";
+@import "utilidades/mapas";
+@import "utilidades/extend";
+
 
 //VARIABLES
 $font: font-family 'Oswald', sans-serif;
@@ -44,7 +48,7 @@ body{
                 justify-content: center;
                 width:30rem;
                 height:2rem;
-                font-size:1rem;
+                font-size:map-get($map:$fuente , $key:font );
             }
             .iconoBuscador{
                 background-color:  rgb(44, 43, 43);
@@ -64,9 +68,9 @@ body{
                 display: flex;
                 align-items: center;
                 div{
-                    font-weight: bold;
+                    font-weight:map-get($map:$fuente , $key:grosor );
                     font-family: 'Albert Sans', sans-serif;
-                    font-size:1rem;
+                    font-size:map-get($map:$fuente , $key:font );
                 }
             }
             .carrito{
@@ -75,7 +79,7 @@ body{
                 align-items: center;
                 margin-left: 1rem;
                 div{
-                    font-weight: bold;
+                    font-weight:map-get($map:$fuente , $key:grosor );
                     font-family: 'Albert Sans', sans-serif;
                     font-size: 1.2rem;
                 }
@@ -103,7 +107,7 @@ body{
                         font-size: 1.2rem;
                         display: flex;
                         font-family:'Albert Sans', sans-serif ;
-                        font-weight: bold;
+                        font-weight:map-get($map:$fuente , $key:grosor );
                         color: black;
                         margin: 0px 3px 0px 3px;
                     }
@@ -142,38 +146,19 @@ body{
             max-height: 5rem; 
         }
         .icono1{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-family:$font ;
-            font-weight: bold;
-         
+            @include iconos
         }
         
         .icono2{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-family:$font;
-            font-weight: bold;
-        
+            @include iconos
         }
 
         .icono3{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;   
-            font-family:$font ;
-            font-weight: bold;
+            @include iconos
         }
 
         .icono4{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-family:$font;
-            font-weight: bold;
-
+            @include iconos
         }
 
         @keyframes iconos {
@@ -188,7 +173,7 @@ body{
         background-color: rgb(198, 197, 197);
         display: flex;
         flex-direction: column;
-        font-size: 1rem;
+        font-size:map-get($map:$fuente , $key:font );
         padding-left: 0.5rem;
         height: 10rem;
         padding-top: 15px;
@@ -197,9 +182,9 @@ body{
         }
         .cuerpoP{
             font-family:'Albert Sans', sans-serif ;
-            font-weight: bold;
+            font-weight:map-get($map:$fuente , $key:grosor);
             font-size: 1rem;
-           margin: 6px 0px 6px 0px;
+            margin: 6px 0px 6px 0px;
         }
         div{
             padding-top: 1rem;
@@ -207,11 +192,11 @@ body{
                 background-color:rgb(139, 134, 134);
                 text-decoration: none;
                 font-family: 'Poppins', sans-serif;
-                font-weight: bold;
+                font-weight:map-get($map:$fuente , $key:grosor );
                 border-radius:7%;
                 border: 0.2rem solid rgb(61, 60, 60);
                 color: rgb(93, 91, 91); 
-                font-size: 1rem;
+                font-size:map-get($map:$fuente , $key:font );
                 padding: 5px;
                 transition: 1s;
             }
@@ -243,7 +228,7 @@ body{
                 text-align: center;
                 .p1{
                     font-family: 'Roboto', sans-serif;
-                    font-weight: bold;
+                    font-weight:map-get($map:$fuente , $key:grosor );
                     padding-bottom: 2rem;
                     color: rgb(104, 100, 100);
                 }
@@ -316,26 +301,22 @@ body{
             display: flex;
             .tarjeta1{
                 img{
-                    height: 2rem;
-                    margin-right:1.5rem ;
+                    @include tarjetas
                 }
             }
             .tarjeta2{
                 img{
-                    height: 2rem;
-                    margin-right:1rem ;
+                    @include tarjetas
                 }
             }
             .tarjeta3{
                 img{
-                    height: 2rem;
-                    margin-right:1rem ;
+                    @include tarjetas
                 }
             }
             .tarjeta4{
                 img{
-                    height: 2rem;
-                    margin-right:1rem ;
+                    @include tarjetas
                 }
             }
 

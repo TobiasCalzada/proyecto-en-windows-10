@@ -93,28 +93,10 @@
   /*conjunto 3*/ }
   .galleriContenedor .conjunto1 img {
     width: 25%; }
-  .galleriContenedor .conjunto1 p {
-    width: 25%;
-    margin-top: 9px;
-    margin-bottom: 9px;
-    display: flex;
-    justify-content: center; }
   .galleriContenedor .conjunto2 img {
     width: 25%; }
-  .galleriContenedor .conjunto2 p {
-    width: 25%;
-    margin-top: 9px;
-    margin-bottom: 9px;
-    display: flex;
-    justify-content: center; }
   .galleriContenedor .conjunto3 img {
     width: 25%; }
-  .galleriContenedor .conjunto3 p {
-    width: 25%;
-    margin-top: 9px;
-    margin-bottom: 9px;
-    display: flex;
-    justify-content: center; }
 
 /*NOSOTROS*/
 .mainNosotros {
@@ -484,8 +466,9 @@
     .mainNosotros .contenedorNosotros .vision .pVision {
       font-size: 1rem;
       font-family: 'Roboto', sans-serif;
-      font-weight: bold i;
-        font-weight-padding-right: 2rem; }
+      font-weight: bold; }
+      .mainNosotros .contenedorNosotros .vision .pVision i {
+        padding-right: 2rem; }
     .mainNosotros .contenedorNosotros .vision .vision p {
       font-size: 0.6rem; }
     .mainNosotros .contenedorNosotros .valores .pValores {
@@ -494,6 +477,16 @@
       font-weight: bold; }
     .mainNosotros .contenedorNosotros .valores p {
       font-size: 0.6rem; } }
+
+/*mixin*/
+/*mapas*/
+/*extend*/
+.galleriContenedor .conjunto1 p, .galleriContenedor .conjunto2 p, .galleriContenedor .conjunto3 p {
+  width: 25%;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: center; }
 
 body {
   background-color: #c6c5c5;
@@ -740,7 +733,7 @@ body {
       display: flex; }
       body .pieDePagina .tarjetaContenedor .tarjeta1 img {
         height: 2rem;
-        margin-right: 1.5rem; }
+        margin-right: 1rem; }
       body .pieDePagina .tarjetaContenedor .tarjeta2 img {
         height: 2rem;
         margin-right: 1rem; }

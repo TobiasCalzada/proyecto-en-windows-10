@@ -12,11 +12,7 @@
             width: 25%;
           }
           p{
-            width: 25%;
-            margin-top: 9px;
-            margin-bottom: 9px;
-            display: flex;
-            justify-content: center;
+            @extend %galleria;
         }
     }
     /*conjunto 2*/
@@ -25,11 +21,7 @@
             width: 25%;
           }
           p{
-            width: 25%;
-            margin-top: 9px;
-            margin-bottom: 9px;
-            display: flex;
-            justify-content: center;
+            @extend %galleria;
         }
     }
     /*conjunto 3*/
@@ -38,11 +30,7 @@
             width: 25%;
           }
           p{
-            width: 25%;
-            margin-top: 9px;
-            margin-bottom: 9px;
-            display: flex;
-            justify-content: center;
+            @extend %galleria;
         }
     }   
 }
