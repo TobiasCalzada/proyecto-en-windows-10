@@ -516,7 +516,8 @@ body {
     body header .buscador {
       background-color: #686464;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      margin-right: 4; }
       body header .buscador input {
         border: 1px solid #2c2b2b;
         justify-content: center;
@@ -532,27 +533,8 @@ body {
         cursor: pointer;
         width: 2rem;
         height: 2rem; }
-    body header .contenedorAccederCarrito {
-      display: flex;
-      padding-right: 1rem; }
-      body header .contenedorAccederCarrito .acceder {
-        display: flex;
-        align-items: center; }
-        body header .contenedorAccederCarrito .acceder div {
-          font-weight: bold;
-          font-family: 'Albert Sans', sans-serif;
-          font-size: 1rem; }
-      body header .contenedorAccederCarrito .carrito {
-        background-color: #686464;
-        display: flex;
-        align-items: center;
-        margin-left: 1rem; }
-        body header .contenedorAccederCarrito .carrito div {
-          font-weight: bold;
-          font-family: 'Albert Sans', sans-serif;
-          font-size: 1.2rem; }
   body .menu {
-    background-color: #afaeae; }
+    background-color: transparent; }
     body .menu ul {
       display: flex;
       justify-content: center; }

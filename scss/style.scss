@@ -43,6 +43,7 @@ body{
             background-color:  rgb(104, 100, 100);
             display: flex;
             align-items: center;
+            margin-right: 4;
             input{
                 border: 1px solid rgb(44, 43, 43);
                 justify-content: center;
@@ -61,34 +62,10 @@ body{
                 height:2rem;
             }
         }
-        .contenedorAccederCarrito{
-            display: flex;
-            padding-right: 1rem;
-            .acceder{
-                display: flex;
-                align-items: center;
-                div{
-                    font-weight:map-get($map:$fuente , $key:grosor );
-                    font-family: 'Albert Sans', sans-serif;
-                    font-size:map-get($map:$fuente , $key:font );
-                }
-            }
-            .carrito{
-                background-color:  rgb(104, 100, 100);
-                display: flex;
-                align-items: center;
-                margin-left: 1rem;
-                div{
-                    font-weight:map-get($map:$fuente , $key:grosor );
-                    font-family: 'Albert Sans', sans-serif;
-                    font-size: 1.2rem;
-                }
-            }
-        }
     }
     /*menu*/
     .menu{
-        background-color:  rgb(175, 174, 174);
+        background-color: transparent;
             ul{
                 display: flex;
                 justify-content: center;
